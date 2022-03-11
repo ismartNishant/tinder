@@ -546,6 +546,12 @@ nav {
 }
 
 @media only screen and (max-width: 450px) {
+  .photos{
+    justify-content: center;
+  }
+  .user{
+    padding: 0rem !important;
+  }
   .hoby li {
     font-size: 0.8rem;
     margin: 0rem 0.4rem;
@@ -553,10 +559,15 @@ nav {
   }
   .col-lg-6 {
     flex: 0 0 auto;
-    width: 48% !important;
+    padding:0 !important;
+    text-align: center;
+    width: 50% !important;
+  }
+  .media-body h4{
+  font-size: 2rem;
   }
   .col-lg-6 img {
-    width: 8rem;
+    width: 10rem;
     height: 8rem;
   }
   .user-info {
