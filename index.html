@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="message.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- bootstrap css-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -29,7 +35,7 @@
             <div class="cricle circle-2"></div>
             <div class="cricle circle-3"></div>
         </div>
-        <h1>Loading <i class='bx bxs-heart bx-burst' ></i></h1>
+        <h1>Loading <i class='bx bxs-heart bx-burst'></i></h1>
     </div>
     <!-- end preloader-->
     <!-- NAV -->
@@ -58,21 +64,1239 @@
             </nav>
         </div>
     </div>
+    <!-------------------  landing page------------------>
     <div class="banner">
         <div class="main" id="main">
             <div class="content">
-              <div class="animated-text">
-                <h3>Tinder Plus</h3>
-                <h3>Tinder Gold</h3>
-                <h3>Tinder Platinum</h3>
-              </div>
+                <div class="animated-text">
+                    <h3>Tinder Plus</h3>
+                    <h3>Tinder Gold</h3>
+                    <h3>Tinder Platinum</h3>
+                </div>
             </div>
             <div>
                 <button class="btn-primary ">Create Account</button>
             </div>
         </div>
     </div>
-   
+    <!--------------- matching section------------------------>
+    <div class="inner-demo">
+        <div class="demo">
+            <div class="demo__content">
+                <div class="demo__card-cont">
+                    <div class="demo__card">
+                        <img src="./img/079.jpg" alt="...">
+                        <div class="user-about">
+                            <h2>Tanwi <span>23</span></h2>
+                        </div>
+                        <div class="demo__card__btm">
+                            <ul>
+                                <i class='bx bxs-heart'
+                                    style='color:#f5064c;border-color: #f5064c;box-shadow: 0px 0px 10px #f5064c;'></i>
+                                <i class='bx bxs-like'
+                                    style='color:#70ff83; border-color: #70ff83;box-shadow: 0px 0px 10px #70ff83;'></i>
+                                <i class='bx bxs-zap'
+                                    style='color:#073efb; border-color: #073efb;box-shadow: 0px 0px 10px #073efb;'></i>
+                                <i class='bx bxs-chat'
+                                    style='color:#9308f0;border-color: #9308f0;box-shadow: 0px 0px 10px #9308f0;'></i>
+                            </ul>
+                        </div>
+                        <div class="demo__card__choice m--reject"></div>
+                        <div class="demo__card__choice m--like"></div>
+                        <div class="demo__card__drag"></div>
+                    </div>
+                    <div class="demo__card">
+                        <img src="./img/163.jpg" alt="...">
+                        <div class="user-about">
+                            <h2>Payal <span>25</span></h2>
+                        </div>
+                        <div class="demo__card__btm">
+                            <ul>
+                                <i class='bx bxs-heart'
+                                    style='color:#f5064c;border-color: #f5064c;box-shadow: 0px 0px 10px #f5064c;'></i>
+                                <i class='bx bxs-like'
+                                    style='color:#70ff83; border-color: #70ff83;box-shadow: 0px 0px 10px #70ff83;'></i>
+                                <i class='bx bxs-zap'
+                                    style='color:#073efb; border-color: #073efb;box-shadow: 0px 0px 10px #073efb;'></i>
+                                <i class='bx bxs-chat'
+                                    style='color:#9308f0;border-color: #9308f0;box-shadow: 0px 0px 10px #9308f0;'></i>
+                            </ul>
+                        </div>
+                        <div class="demo__card__choice m--reject"></div>
+                        <div class="demo__card__choice m--like"></div>
+                        <div class="demo__card__drag"></div>
+                    </div>
+                    <div class="demo__card">
+                        <img src="./img/nancy-2.jpeg" alt="...">
+                        <div class="user-about">
+                            <h2>Somi <span>19</span></h2>
+                        </div>
+                        <div class="demo__card__btm">
+                            <ul>
+                                <i class='bx bxs-heart'
+                                    style='color:#f5064c;border-color: #f5064c;box-shadow: 0px 0px 10px #f5064c;'></i>
+                                <i class='bx bxs-like'
+                                    style='color:#70ff83; border-color: #70ff83;box-shadow: 0px 0px 10px #70ff83;'></i>
+                                <i class='bx bxs-zap'
+                                    style='color:#073efb; border-color: #073efb;box-shadow: 0px 0px 10px #073efb;'></i>
+                                <i class='bx bxs-chat'
+                                    style='color:#9308f0;border-color: #9308f0;box-shadow: 0px 0px 10px #9308f0;'></i>
+                            </ul>
+                        </div>
+                        <div class="demo__card__choice m--reject"></div>
+                        <div class="demo__card__choice m--like"></div>
+                        <div class="demo__card__drag"></div>
+                    </div>
+                    <div class="demo__card">
+                        <img src="./img/nancy.jpeg" alt="...">
+                        <div class="user-about">
+                            <h2>Lisa <span>24</span></h2>
+                        </div>
+                        <div class="demo__card__btm">
+                            <ul>
+                                <i class='bx bxs-heart'
+                                    style='color:#f5064c;border-color: #f5064c;box-shadow: 0px 0px 10px #f5064c;'></i>
+                                <i class='bx bxs-like'
+                                    style='color:#70ff83; border-color: #70ff83;box-shadow: 0px 0px 10px #70ff83;'></i>
+                                <i class='bx bxs-zap'
+                                    style='color:#073efb; border-color: #073efb;box-shadow: 0px 0px 10px #073efb;'></i>
+                                <i class='bx bxs-chat'
+                                    style='color:#9308f0;border-color: #9308f0;box-shadow: 0px 0px 10px #9308f0;'></i>
+                            </ul>
+                        </div>
+                        <div class="demo__card__choice m--reject"></div>
+                        <div class="demo__card__choice m--like"></div>
+                        <div class="demo__card__drag"></div>
+                    </div>
+                    <div class="demo__card">
+                        <img src="./img/self.png" alt="...">
+                        <div class="user-about">
+                            <h2>Nishant <span>20</span></h2>
+                        </div>
+                        <div class="demo__card__btm">
+                            <ul>
+                                <i class='bx bxs-heart'
+                                    style='color:#f5064c;border-color: #f5064c;box-shadow: 0px 0px 10px #f5064c;'></i>
+                                <i class='bx bxs-like'
+                                    style='color:#70ff83; border-color: #70ff83;box-shadow: 0px 0px 10px #70ff83;'></i>
+                                <i class='bx bxs-zap'
+                                    style='color:#073efb; border-color: #073efb;box-shadow: 0px 0px 10px #073efb;'></i>
+                                <i class='bx bxs-chat'
+                                    style='color:#9308f0;border-color: #9308f0;box-shadow: 0px 0px 10px #9308f0;'></i>
+                            </ul>
+                        </div>
+                        <div class="demo__card__choice m--reject"></div>
+                        <div class="demo__card__choice m--like"></div>
+                        <div class="demo__card__drag"></div>
+                    </div>
+                    <div class="demo__card">
+                        <img src="./img/079.jpg" alt="...">
+                        <div class="user-about">
+                            <h2>Nancy <span>21</span></h2>
+                        </div>
+                        <div class="demo__card__btm">
+                            <ul>
+                                <i class='bx bxs-heart'
+                                    style='color:#f5064c;border-color: #f5064c;box-shadow: 0px 0px 10px #f5064c;'></i>
+                                <i class='bx bxs-like'
+                                    style='color:#70ff83; border-color: #70ff83;box-shadow: 0px 0px 10px #70ff83;'></i>
+                                <i class='bx bxs-zap'
+                                    style='color:#073efb; border-color: #073efb;box-shadow: 0px 0px 10px #073efb;'></i>
+                                <i class='bx bxs-chat'
+                                    style='color:#9308f0;border-color: #9308f0;box-shadow: 0px 0px 10px #9308f0;'></i>
+                            </ul>
+                        </div>
+                        <div class="demo__card__choice m--reject"></div>
+                        <div class="demo__card__choice m--like"></div>
+                        <div class="demo__card__drag"></div>
+                    </div>
+                </div>
+                <p class="demo__tip">Swipe left or right</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-------------user profile------------------------->
+    <div class="py-5 user">
+        <div class="col-md-5 mx-auto">
+            <!-- Profile widget -->
+            <div class="bg-white shadow rounded overflow-hidden">
+                <div class="px-4 pt-0 pb-4 cover">
+                    <div class="media align-items-end profile-head">
+                        <div class="profile mr-3">
+                            <img src="./img/self.png" alt="..." width="180" class="rounded mb-2 img-thumbnail">
+                            <a href="#" class="btn btn-outline-dark btn-sm btn-block">Edit profile</a>
+                        </div>
+                        <div class="media-body mb-5 text-white">
+                            <h4 class="mt-0 mb-0">Nishant Rajput</h4>
+                            <p class="small mb-4"> <i class="fas fa-map-marker-alt mr-2"></i> Pune</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-light p-4 d-flex user-info text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <h5 class="font-weight-bold mb-0 d-block">Active</h5><small
+                                class="text-muted">Status</small>
+                        </li>
+                        <li class="list-inline-item">
+                            <h5 class="font-weight-bold mb-0 d-block">Yes</h5><small class="text-muted">Verified</small>
+                        </li>
+                        <li class="list-inline-item">
+                            <h5 class="font-weight-bold mb-0 d-block">Male</h5><small class="text-muted">Sex</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 py-3">
+                    <h5 class="m-2">About</h5>
+                    <div class="p-4 rounded shadow-sm bg-light">
+                        <p class="font-italic mb-0">Game Developer, sketcher, Alphaboy with big fan of K-POP, currently
+                            saying yes to new adventurous.</p>
+                    </div>
+                    <h5 class="m-2 mt-2">Hobies</h5>
+                    <ul class="hoby">
+                        <li>Dancing</li>
+                        <li>Singing</li>
+                        <li>Painting</li>
+                        <li>Traveling</li>
+                    </ul>
+                </div>
+                <div class="py-4 px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h5 class="mb-0">Photos</h5><a href="#" class="btn btn-link text-muted">Show all</a>
+                    </div>
+                    <div class="row photos">
+                        <div class="col-lg-6 mb-2"><img
+                                src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                alt="" class="rounded"></div>
+                        <div class="col-lg-6 mb-2"><img
+                                src="https://images.unsplash.com/photo-1493571716545-b559a19edd14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                alt="" class="rounded"></div>
+                        <div class="col-lg-6 mb-2"><img
+                                src="https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                alt="" class=" rounded "></div>
+                        <div class="col-lg-6 mb-2"><img
+                                src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                alt="" class=" rounded"></div>
+                        <div class="col-lg-6 mb-2"><img
+                                src="https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                alt="" class="rounded"></div>
+                        <div class="col-lg-6 mb-2"><img
+                                src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                alt="" class="rounded"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------messaging section----------------------------->
+    <div class="my-msg-2">
+        <div class="container my-msg">
+            <div class="panel messages-panel">
+                <div class="contacts-list">
+                    <div class="inbox-categories">
+                        <div data-toggle="tab" data-target="#inbox" class="active"> Inbox </div>
+                        <div data-toggle="tab" data-target="#sent"> Sent </div>
+                        <div data-toggle="tab" data-target="#marked"> Marked </div>
+                        <div data-toggle="tab" data-target="#drafts"> Drafts </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="inbox" class="contacts-outter-wrapper tab-pane active">
+                            <form class="panel-search-form info form-group has-feedback no-margin-bottom">
+                                <input type="text" class="form-control" name="search" placeholder="Search">
+
+                            </form>
+                            <div class="contacts-outter">
+                                <ul class="list-unstyled contacts">
+                                    <li data-toggle="tab" data-target="#inbox-message-1" class="active">
+                                        <div class="message-count"> 1 </div>
+                                        <img alt="" class="img-circle medium-image" src="./img/079.jpg">
+
+                                        <div class="vcentered info-combo">
+                                            <h3 class="no-margin-bottom name"> Priya </h3>
+                                            <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                        </div>
+                                        <div class="contacts-add">
+                                            <span class="message-time"> 2:32 <sup>AM</sup></span>
+                                            <i class="fa fa-trash-o"></i>
+                                            <i class="fa fa-paperclip"></i>
+                                        </div>
+                                    </li>
+                                    <li data-toggle="tab" data-target="#inbox-message-2">
+                                        <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                        <div class="vcentered info-combo">
+                                            <h3 class="no-margin-bottom name"> lisa </h3>
+                                            <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
+                                        </div>
+                                        <div class="contacts-add">
+                                            <span class="message-time"> 3:56 <sup>AM</sup></span>
+                                            <i class="fa fa-trash-o"></i>
+                                            <i class="fa fa-paperclip"></i>
+                                        </div>
+                                    </li>
+                                    <li data-toggle="tab" data-target="#inbox-message-3">
+                                        <div class="message-count"> 1 </div>
+                                        <img alt="" class="img-circle medium-image" src="./img/nancy-2.jpeg">
+
+                                        <div class="vcentered info-combo">
+                                            <h3 class="no-margin-bottom name"> Somi</h3>
+                                            <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                        </div>
+                                        <div class="contacts-add">
+                                            <span class="message-time"> 5:21 <sup>AM</sup></span>
+                                            <i class="fa fa-trash-o"></i>
+                                            <i class="fa fa-paperclip"></i>
+                                        </div>
+                                    </li>
+                                    <li data-toggle="tab" data-target="#inbox-message-4">
+                                        <div class="message-count"> 2 </div>
+                                        <img alt="" class="img-circle medium-image" src="./img/nancy.jpeg">
+
+                                        <div class="vcentered info-combo">
+                                            <h3 class="no-margin-bottom name">Tanvi Jain</h3>
+                                            <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
+                                        </div>
+                                        <div class="contacts-add">
+                                            <span class="message-time"> 6:13 <sup>AM</sup></span>
+                                            <i class="fa fa-trash-o"></i>
+                                            <i class="fa fa-paperclip"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="sent" class="contacts-outter-wrapper tab-pane">
+                            <form class="panel-search-form success form-group has-feedback no-margin-bottom">
+                                <input type="text" class="form-control" name="search" placeholder="Search">
+                            </form>
+                            <div class="contacts-outter">
+                                <ul class="list-unstyled contacts success">
+                                    <li data-toggle="tab" data-target="#sent-message-1">
+                                        <img alt="" class="img-circle medium-image" src="./img/079.jpg">
+
+                                        <div class="vcentered info-combo">
+                                            <h3 class="no-margin-bottom name"> Nancy</h3>
+                                            <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                        </div>
+                                        <div class="contacts-add">
+                                            <span class="message-time"> 2:24 <sup>AM</sup></span>
+                                            <i class="fa fa-trash-o"></i>
+                                            <i class="fa fa-paperclip"></i>
+                                        </div>
+                                    </li>
+                                    <li data-toggle="tab" data-target="#sent-message-2">
+                                        <div class="message-count"> 7 </div>
+                                        <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                        <div class="vcentered info-combo">
+                                            <h3 class="no-margin-bottom name"> Lisa </h3>
+                                            <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                        </div>
+                                        <div class="contacts-add">
+                                            <span class="message-time"> 12:41 <sup>AM</sup></span>
+                                            <i class="fa fa-trash-o"></i>
+                                            <i class="fa fa-paperclip"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="marked" class="contacts-outter-wrapper tab-pane">
+                            <form class="panel-search-form warning form-group has-feedback no-margin-bottom">
+                                <input type="text" class="form-control" name="search" placeholder="Search">
+
+                            </form>
+                            <div class="contacts-outter">
+                                <ul class="list-unstyled contacts warning">
+                                    <li data-toggle="tab" data-target="#marked-message-1">
+                                        <div class="message-count"> 2 </div>
+                                        <img alt="" class="img-circle medium-image" src="./img/nancy-2.jpeg">
+
+                                        <div class="vcentered info-combo">
+                                            <h3 class="no-margin-bottom name"> Somi </h3>
+                                            <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                        </div>
+                                        <div class="contacts-add">
+                                            <span class="message-time"> 1:44 <sup>AM</sup></span>
+                                            <i class="fa fa-trash-o"></i>
+                                            <i class="fa fa-paperclip"></i>
+                                        </div>
+                                    </li>
+                                    <li data-toggle="tab" data-target="#marked-message-2">
+                                        <div class="message-count"> 1 </div>
+                                        <img alt="" class="img-circle medium-image" src="./img/nancy.jpeg">
+
+                                        <div class="vcentered info-combo">
+                                            <h3 class="no-margin-bottom name"> Payal</h3>
+                                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                        </div>
+                                        <div class="contacts-add">
+                                            <span class="message-time"> 3:23 <sup>AM</sup></span>
+                                            <i class="fa fa-trash-o"></i>
+                                            <i class="fa fa-paperclip"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="drafts" class="contacts-outter-wrapper tab-pane">
+                            <form class="panel-search-form dark form-group has-feedback no-margin-bottom">
+                                <input type="text" class="form-control" name="search" placeholder="Search">
+
+                            </form>
+                            <div class="contacts-outter">
+                                <ul class="list-unstyled contacts dark">
+                                    <li data-toggle="tab" data-target="#draft-message-1">
+                                        <img alt="" class="img-circle medium-image" src="./img/nancy.jpeg">
+
+                                        <div class="vcentered info-combo">
+                                            <h3 class="no-margin-bottom name"> Tanvi Jain </h3>
+                                            <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
+                                        </div>
+                                        <div class="contacts-add">
+                                            <span class="message-time"> 4:22 <sup>AM</sup></span>
+                                            <i class="fa fa-trash-o"></i>
+                                            <i class="fa fa-paperclip"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane message-body active" id="inbox-message-1">
+                        <div class="message-top">
+                            <a class="btn btn-outline-danger new-message "> <i class="fa fa-envelope"></i> New Message
+                            </a>
+
+                            <div class="new-message-wrapper">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Send message to...">
+                                    <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="chat-footer new-message-textarea">
+                                    <textarea class="send-message-text"></textarea>
+                                    <label class="upload-file">
+                                        <input type="file" required="">
+                                        <i class="fa fa-paperclip"></i>
+                                    </label>
+                                    <button type="button" class="send-message-button btn-outline-danger"> <i
+                                            class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="chat-body">
+                                <div class="message info">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4>Priya Sharma </h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 2:25 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4>Nishant Rajput</h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 2:28 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Thanks, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message info">
+                                    <img alt="" class="img-circle medium-image" src="./img/079.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Priya Sharma </h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 2:32 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="chat-footer">
+                                <textarea class="send-message-text"></textarea>
+                                <label class="upload-file">
+                                    <input type="file" required="">
+                                    <i class="fa fa-paperclip"></i>
+                                </label>
+                                <button type="button" class="send-message-button btn-outline-danger"> <i
+                                        class="fa fa-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane message-body" id="inbox-message-2">
+                        <div class="message-top">
+                            <a class="btn btn btn-outline-danger new-message"> <i class="fa fa-envelope"></i> New
+                                Message </a>
+
+                            <div class="new-message-wrapper">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Send message to...">
+                                    <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="chat-footer new-message-textarea">
+                                    <textarea class="send-message-text"></textarea>
+                                    <label class="upload-file">
+                                        <input type="file" required="">
+                                        <i class="fa fa-paperclip"></i>
+                                    </label>
+                                    <button type="button" class="send-message-button btn-outline-danger"> <i
+                                            class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="chat-body">
+                                <div class="message info">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Lisa Manoban </h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 3:45 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4>Nishant Rajput </h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 3:52 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message info">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4>Lisa Manoban</h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 3:56 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4> Nishant Rajput</h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 4:01 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Great, thank you.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+
+                            <div class="chat-footer">
+                                <textarea class="send-message-text"></textarea>
+                                <label class="upload-file">
+                                    <input type="file" required="">
+                                    <i class="fa fa-paperclip"></i>
+                                </label>
+                                <button type="button" class="send-message-button btn-outline-danger"> <i
+                                        class="fa fa-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane message-body" id="inbox-message-3">
+                        <div class="message-top">
+                            <a class="btn btn btn-outline-danger new-message"> <i class="fa fa-envelope"></i> New
+                                Message </a>
+
+                            <div class="new-message-wrapper">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Send message to...">
+                                    <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="chat-footer new-message-textarea">
+                                    <textarea class="send-message-text"></textarea>
+                                    <label class="upload-file">
+                                        <input type="file" required="">
+                                        <i class="fa fa-paperclip"></i>
+                                    </label>
+                                    <button type="button" class="send-message-button btn-outline-danger"> <i
+                                            class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="chat-body">
+                                <div class="message info">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Jeon Somi</h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 5:07 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4> Nishant Rajput</h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 5:16 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message info">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Jeon Somi</h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 5:21 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+
+                            <div class="chat-footer">
+                                <textarea class="send-message-text"></textarea>
+                                <label class="upload-file">
+                                    <input type="file" required="">
+                                    <i class="fa fa-paperclip"></i>
+                                </label>
+                                <button type="button" class="send-message-button btn-outline-danger"> <i
+                                        class="fa fa-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane message-body" id="inbox-message-4">
+                        <div class="message-top">
+                            <a class="btn btn btn-outline-danger new-message"> <i class="fa fa-envelope"></i> New
+                                Message </a>
+
+                            <div class="new-message-wrapper">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Send message to...">
+                                    <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="chat-footer new-message-textarea">
+                                    <textarea class="send-message-text"></textarea>
+                                    <label class="upload-file">
+                                        <input type="file" required="">
+                                        <i class="fa fa-paperclip"></i>
+                                    </label>
+                                    <button type="button" class="send-message-button btn-outline-danger"> <i
+                                            class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="chat-body">
+                                <div class="message info">
+                                    <img alt="" class="img-circle medium-image" src="./img/nancy.jpeg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4>Tanvi Jain </h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 6:12 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4> Nishant Rajput </h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 6:16 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message info">
+                                    <img alt="" class="img-circle medium-image" src="./img/nancy.jpeg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Tanvi Jain</h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 6:12 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="message info">
+                                    <img alt="" class="img-circle medium-image" src="./img/nancy.jpeg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4>Tanvi Jain </h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 6:13 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetu.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+
+                            <div class="chat-footer">
+                                <textarea class="send-message-text"></textarea>
+                                <label class="upload-file">
+                                    <input type="file" required="">
+                                    <i class="fa fa-paperclip"></i>
+                                </label>
+                                <button type="button" class="send-message-button btn-outline-danger"> <i
+                                        class="fa fa-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane message-body" id="sent-message-1">
+                        <div class="message-top">
+                            <a class="btn btn btn-outline-danger new-message"> <i class="fa fa-envelope"></i> New
+                                Message </a>
+
+                            <div class="new-message-wrapper">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Send message to...">
+                                    <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="chat-footer new-message-textarea">
+                                    <textarea class="send-message-text"></textarea>
+                                    <label class="upload-file">
+                                        <input type="file" required="">
+                                        <i class="fa fa-paperclip"></i>
+                                    </label>
+                                    <button type="button" class="send-message-button btn-outline-danger"> <i
+                                            class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="chat-body">
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4> Nishant Rajput </h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 2:05 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message success">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Nancy Jwel </h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 2:11 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message success">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Nancy Jwel </h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 2:24 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4> Nishant Rajput </h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 2:25 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+
+                            <div class="chat-footer">
+                                <textarea class="send-message-text"></textarea>
+                                <label class="upload-file">
+                                    <input type="file" required="">
+                                    <i class="fa fa-paperclip"></i>
+                                </label>
+                                <button type="button" class="send-message-button btn-outline-danger"> <i
+                                        class="fa fa-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane message-body" id="sent-message-2">
+                        <div class="message-top">
+                            <a class="btn btn btn-outline-danger new-message"> <i class="fa fa-envelope"></i> New
+                                Message </a>
+
+                            <div class="new-message-wrapper">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Send message to...">
+                                    <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="chat-footer new-message-textarea">
+                                    <textarea class="send-message-text"></textarea>
+                                    <label class="upload-file">
+                                        <input type="file" required="">
+                                        <i class="fa fa-paperclip"></i>
+                                    </label>
+                                    <button type="button" class="send-message-button btn-outline-danger"> <i
+                                            class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="chat-body">
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4> Nishant Rajput </h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 12:36 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message success">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Lisa Manoban</h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 12:41 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4>Nishant Rajput</h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 12:46 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Thanks :)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+
+                            <div class="chat-footer">
+                                <textarea class="send-message-text"></textarea>
+                                <label class="upload-file">
+                                    <input type="file" required="">
+                                    <i class="fa fa-paperclip"></i>
+                                </label>
+                                <button type="button" class="send-message-button btn-outline-danger"> <i
+                                        class="fa fa-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane message-body" id="marked-message-1">
+                        <div class="message-top">
+                            <a class="btn btn btn-outline-danger new-message"> <i class="fa fa-envelope"></i> New
+                                Message </a>
+
+                            <div class="new-message-wrapper">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Send message to...">
+                                    <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="chat-footer new-message-textarea">
+                                    <textarea class="send-message-text"></textarea>
+                                    <label class="upload-file">
+                                        <input type="file" required="">
+                                        <i class="fa fa-paperclip"></i>
+                                    </label>
+                                    <button type="button" class="send-message-button btn-outline-danger"> <i
+                                            class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="chat-body">
+                                <div class="message warning">
+                                    <img alt="" class="img-circle medium-image" src="./img/079.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Jeon Somi</h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 1:44 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4> Nishant Rajput </h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 1:51 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+
+                            <div class="chat-footer">
+                                <textarea class="send-message-text"></textarea>
+                                <label class="upload-file">
+                                    <input type="file" required="">
+                                    <i class="fa fa-paperclip"></i>
+                                </label>
+                                <button type="button" class="send-message-button btn-outline-danger"> <i
+                                        class="fa fa-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane message-body" id="marked-message-2">
+                        <div class="message-top">
+                            <a class="btn btn btn-outline-danger new-message"> <i class="fa fa-envelope"></i> New
+                                Message </a>
+
+                            <div class="new-message-wrapper">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Send message to...">
+                                    <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="chat-footer new-message-textarea">
+                                    <textarea class="send-message-text"></textarea>
+                                    <label class="upload-file">
+                                        <input type="file" required="">
+                                        <i class="fa fa-paperclip"></i>
+                                    </label>
+                                    <button type="button" class="send-message-button btn-outline-danger"> <i
+                                            class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="chat-body">
+                                <div class="message warning">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Payal Tiwari</h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 3:23 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4>Nishant Rajput </h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 3:31 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="message warning">
+                                    <img alt="" class="img-circle medium-image" src="./img/163.jpg">
+
+                                    <div class="message-body">
+                                        <div class="message-info">
+                                            <h4> Payal Tiwari </h4>
+                                            <h5> <i class="fa fa-clock-o"></i> 3:35 PM </h5>
+                                        </div>
+                                        <hr>
+                                        <div class="message-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+
+                            <div class="chat-footer">
+                                <textarea class="send-message-text"></textarea>
+                                <label class="upload-file">
+                                    <input type="file" required="">
+                                    <i class="fa fa-paperclip"></i>
+                                </label>
+                                <button type="button" class="send-message-button btn-outline-danger"> <i
+                                        class="fa fa-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane message-body" id="draft-message-1">
+                        <div class="message-top">
+                            <a class="btn btn btn-outline-danger new-message"> <i class="fa fa-envelope"></i> New
+                                Message </a>
+
+                            <div class="new-message-wrapper">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Send message to...">
+                                    <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="chat-footer new-message-textarea">
+                                    <textarea class="send-message-text"></textarea>
+                                    <label class="upload-file">
+                                        <input type="file" required="">
+                                        <i class="fa fa-paperclip"></i>
+                                    </label>
+                                    <button type="button" class="send-message-button btn-outline-danger"> <i
+                                            class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="chat-body">
+
+                                <div class="message my-message">
+                                    <img alt="" class="img-circle medium-image" src="./img/self.png">
+
+                                    <div class="message-body">
+                                        <div class="message-body-inner">
+                                            <div class="message-info">
+                                                <h4> Nishant Rajput </h4>
+                                                <h5> <i class="fa fa-clock-o"></i> 4:22 PM </h5>
+                                            </div>
+                                            <hr>
+                                            <div class="message-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+
+                            <div class="chat-footer">
+                                <textarea class="send-message-text"></textarea>
+                                <label class="upload-file">
+                                    <input type="file" required="">
+                                    <i class="fa fa-paperclip"></i>
+                                </label>
+                                <button type="button" class="send-message-button btn-outline-danger"> <i
+                                        class="fa fa-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript"> </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

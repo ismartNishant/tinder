@@ -157,7 +157,7 @@ font-family: 'Varela Round', sans-serif; */
   }
 }
 section {
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
 }
 /* ------- navbar css start --------- */
 .login a {
@@ -290,12 +290,11 @@ nav {
   font-size: 3rem;
   font-weight: bolder !important;
   border: 2px solid var(--third) !important;
-
-  background: var(--third) !important;
+  background: rgba(0, 0, 0, 0.192) !important;
 }
 .btn-primary:hover {
   transition: all 0.5s linear;
-  background: rgba(0, 0, 0, 0.192) !important;
+  background: var(--third) !important;
 }
 
 .scrollToTop-btn {
@@ -321,17 +320,18 @@ nav {
   opacity: 1;
   pointer-events: auto;
 }
+
+/*
+===================
+   main section
+===================
+*/
 .banner {
   width: 100%;
   height: 100vh;
   background: url("./img/d2.jpg") no-repeat;
   background-size: cover;
 }
-/*
-===================
-   main section
-===================
-*/
 .main {
   position: relative;
   width: 100%;
@@ -348,21 +348,6 @@ nav {
   padding: 1.5rem 3rem;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.26);
-}
-.main .image img {
-  width: 20vw;
-  margin-left: 0.5em;
-  border-radius: 10px;
-  animation: float 3s linear infinite;
-}
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0rem);
-  }
-  50% {
-    transform: translateY(-2.5rem);
-  }
 }
 .animated-text {
   position: relative;
@@ -398,6 +383,9 @@ nav {
   }
 }
 /* ------------user profile------------*/
+.col-md-5 {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+}
 .profile-head {
   transform: translateY(5rem);
   display: flex;
@@ -432,7 +420,6 @@ nav {
 }
 
 .user {
-  background: linear-gradient(to right, #e96443, #904e95);
   min-height: 100vh;
   overflow-x: hidden;
   align-content: center;
@@ -447,6 +434,192 @@ nav {
 .user-info {
   justify-content: end;
 }
+
+/*-----------matching ----------------*/
+.inner-demo {
+  justify-content: center;
+  background: linear-gradient(to right, var(--third), #904e95);
+  width: 100%;
+  padding: 2rem 0rem;
+  height: 100%;
+}
+.user-about {
+  padding: 0.5rem 1rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0rem;
+  background: rgba(0, 0, 0, 0.493);
+  color: #fff;
+}
+.user-about span {
+  font-size: 1.5rem;
+}
+.demo {
+  margin: 4rem auto;
+  width: 20rem;
+  height: 34rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.demo__header {
+  height: 3rem;
+  background: #002942;
+}
+.demo__content {
+  position: relative;
+  height: 40rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.demo__card-cont {
+  position: relative;
+  width: 20rem;
+  height: 25rem;
+  margin: 0 auto 5rem;
+}
+.demo__card {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 100%;
+}
+.demo__card img {
+  width: 20rem;
+  height: 25rem;
+}
+.demo__card.reset {
+  transition: transform 0.3s;
+  transform: translateX(0) !important;
+}
+.demo__card.reset .demo__card__choice {
+  transition: opacity 0.3s;
+  opacity: 0 !important;
+}
+.demo__card.inactive {
+  transition: transform 0.3s;
+}
+.demo__card.to-left {
+  transform: translateX(-30rem) rotate(-30deg) !important;
+}
+.demo__card.to-right {
+  transform: translate(30rem) rotate(30deg) !important;
+}
+.demo__card.below {
+  z-index: 1;
+}
+.demo__card__top {
+  height: 20.5rem;
+  padding-top: 4rem;
+}
+
+.demo__card__img {
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  border: 0.5rem solid #ffffff;
+  background-image: url("//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg");
+  background-size: cover;
+}
+.demo__card__name {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.demo__card__btm {
+  background: #ffffff;
+}
+.demo__card__btm ul {
+  list-style: none;
+  padding: 1rem 0rem;
+  background: #000;
+  text-align: center;
+}
+.demo__card__btm ul i {
+  font-size: 2rem !important;
+  margin: 0rem 0.5rem;
+  border: 2px solid #e70b03;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.demo__card__btm ul i:hover {
+  color: #fff !important;
+}
+.demo__card__we {
+  text-align: center;
+  font-size: 2.2rem;
+}
+.demo__card__choice {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.demo__card__choice:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-left: -1rem;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: -2rem -3rem #fff, 2rem -3rem #fff;
+}
+.demo__card__choice:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4rem;
+  height: 1.5rem;
+  margin-left: -2rem;
+  border: 0.6rem solid #fff;
+  border-bottom: none;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.demo__card__choice.m--reject {
+  background: #f7047dd7;
+}
+.demo__card__choice.m--like {
+  background: #6de781;
+}
+.demo__card__choice.m--like:after {
+  transform: scaleY(-1);
+}
+.demo__card__drag {
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.demo__tip {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.8rem 0rem;
+  background: #eb0551;
+  color: #fff;
+}
+
+/*------------------------------
+        media queries
+------------------------------*/
+
 @media only screen and (max-width: 1100px) {
   .logo {
     font-size: 2rem;
@@ -542,14 +715,14 @@ nav {
   }
   .mycontainer {
     background: #101010;
-}
+  }
 }
 
 @media only screen and (max-width: 450px) {
-  .photos{
+  .photos {
     justify-content: center;
   }
-  .user{
+  .user {
     padding: 0rem !important;
   }
   .hoby li {
@@ -559,12 +732,12 @@ nav {
   }
   .col-lg-6 {
     flex: 0 0 auto;
-    padding:0 !important;
+    padding: 0 !important;
     text-align: center;
     width: 50% !important;
   }
-  .media-body h4{
-  font-size: 2rem;
+  .media-body h4 {
+    font-size: 2rem;
   }
   .col-lg-6 img {
     width: 10rem;
@@ -581,7 +754,7 @@ nav {
     color: #f5f6f8 !important;
     border-color: #f3f4f5 !important;
   }
-  .btn-outline-dark:hover{
+  .btn-outline-dark:hover {
     background: var(--third) !important;
   }
 
@@ -619,5 +792,8 @@ nav {
       margin-top: -10px;
     }
   }
-  
+
+  .scrollToTop-btn.active {
+    right: 11px;
+  }
 }
