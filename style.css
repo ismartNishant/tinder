@@ -735,7 +735,7 @@ nav {
 @media only screen and (max-width: 450px) {
   .down-arr{
     font-size: 4rem;
-    top:-7rem;
+    top:-10rem;
   }
   .photos {
     justify-content: center;
